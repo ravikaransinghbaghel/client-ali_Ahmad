@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Ali Ahmad — Assistant Professor & Mechanical Engineer</title>
+        <meta name="description"
+            content="Ali Ahmad — Assistant Professor & Mechanical Engineer. Portfolio with resume, contact and experience." />
+        <meta name="keywords" content="Ali Ahmad, Mechanical Engineer, Assistant Professor, Thermal Engineering, CFD">
+        <meta name="author" content="Ali Ahmad">
+
+        <link rel="icon" type="image/x-icon" href="./ali.jpg" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;600&display=swap"
+            rel="stylesheet">
+        <style>
+            :root {
+                --bg: #f7f7f8;
+                --card: #ffffff;
+                --muted: #6b7280;
+                --accent: #0f4c81;
+                --accent-2: #0b6ea8;
+                --radius: 14px;
+                --gap: 24px;
+                font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+            }
+
+            * {
+                box-sizing: border-box
+            }
+
+            body {
+                margin: 0;
+                background: linear-gradient(180deg, var(--bg), #eef3f8);
+                color: #111827;
+                line-height: 1.5
+            }
+
+            .container {
+                max-width: 1100px;
+                margin: 48px auto;
+                padding: 28px
+            }
+
+            /* Header / Hero */
+            .hero {
+                display: grid;
+                grid-template-columns: 1fr 320px;
+                gap: var(--gap);
+                align-items: center
+            }
+
+            .hero-card {
+                background: var(--card);
+                border-radius: var(--radius);
+                padding: 28px;
+                box-shadow: 0 8px 30px rgba(15, 76, 129, 0.06)
+            }
+
+            .name {
+                font-family: 'Merriweather', serif;
+                font-size: 28px;
+                margin: 0;
+                color: var(--accent)
+            }
+
+            .title {
+                margin: 6px 0 18px;
+                color: var(--muted);
+                font-weight: 600
+            }
+
+            .lead {
+                margin: 0 0 18px;
+                color: #374151
+            }
+
+            .cta {
+                display: flex;
+                gap: 12px
+            }
+
+            .btn {
+                padding: 10px 16px;
+                border-radius: 10px;
+                text-decoration: none;
+                font-weight: 600;
+                display: inline-block
+            }
+
+            .btn-primary {
+                background: var(--accent);
+                color: #fff
+            }
+
+            .btn-ghost {
+                border: 1px solid #d1d5db;
+                color: var(--accent);
+                background: transparent
+            }
+
+            /* Profile card */
+            .profile {
+                background: linear-gradient(180deg, #fff, #fbfdff);
+                border-radius: 14px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 6px 18px rgba(11, 110, 168, 0.06)
+            }
+
+            .avatar {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                display: inline-block;
+                background: linear-gradient(135deg, var(--accent), var(--accent-2));
+                color: #fff;
+                font-size: 44px;
+                line-height: 120px;
+                font-weight: 700
+            }
+
+            .avatar img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+                vertical-align: middle
+            }
+
+            .meta {
+                margin-top: 12px;
+                color: var(--muted);
+                font-size: 14px
+            }
+
+            /* Sections */
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr 340px;
+                gap: var(--gap);
+                margin-top: 24px
+            }
+
+            .card {
+                background: var(--card);
+                border-radius: 12px;
+                padding: 18px;
+                box-shadow: 0 8px 24px rgba(2, 6, 23, 0.04)
+            }
+
+            h3 {
+                margin: 0 0 12px;
+                font-family: 'Merriweather', serif;
+                color: #0b4c74
+            }
+
+            .muted {
+                color: var(--muted);
+                font-size: 14px
+            }
+
+            /* Lists and project */
+            .project {
+                padding: 12px;
+                border-radius: 8px;
+                border: 1px solid #eef2f7;
+                margin-bottom: 12px
+            }
+
+            .project h4 {
+                margin: 0 0 6px
+            }
+
+            .project p {
+                margin: 0;
+                color: #374151;
+                font-size: 14px
+            }
+
+            /* Responsive */
+            @media (max-width:900px) {
+                .hero {
+                    grid-template-columns: 1fr;
+                }
+
+                .grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .hero-card {
+                    order: 2
+                }
+
+                .profile {
+                    order: 1
+                }
+            }
+
+            footer {
+                margin-top: 28px;
+                text-align: center;
+                color: var(--muted);
+                font-size: 13px
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="hero">
+                <div class="hero-card">
+                    <p class="muted">Hello — I’m</p>
+                    <h1 class="name">Ali Ahmad</h1>
+                    <div class="title">Assistant Professor • Mechanical Engineer (M.Tech — Thermal Engineering)</div>
+                    <p class="lead">I’m a passionate educator and mechanical engineer with a deep commitment to sharing
+                        knowledge and inspiring future innovators. After earning my M.Tech in Thermal Engineering from
+                        Jamia Millia Islamia, I began my teaching journey at the ITM Group of Institutions. Today I
+                        focus on guiding the next generation of engineers and fostering creative, forward-thinking minds
+                        ready to make an impact.</p>
+
+                    <div class="cta">
+                        <a class="btn btn-primary" href="#contact">Contact Me</a>
+                        <a class="btn btn-ghost" href="ALI_CV.pdf" download="Ali_Ahmad_Resume">Download Resume</a>
+                    </div>
+                </div>
+
+                <aside class="profile">
+                    <div class="avatar"><img src="ali.jpg" alt=""></div>
+                    <div style="margin-top:10px;font-weight:700">Assistant Professor</div>
+                    <div class="meta">Assistant Professor || Mechanical Engineering || Researcher
+                    </div>
+                </aside>
+            </div>
+
+            <div class="grid">
+                <section class="card">
+                    <h3>Experience</h3>
+                    <div style="margin-top:12px">
+                        <div style="margin-bottom:14px">
+                            <strong>Faculty, ITM Group of Institutions</strong>
+                            <div class="muted">Teaching & curriculum development — Mechanical Engineering</div>
+                            <div style="margin-top:8px;color:#374151;font-size:14px">Design and deliver undergraduate
+                                courses, mentor student projects, and guide laboratory sessions focused on thermal
+                                systems and fluid mechanics.</div>
+                        </div>
+
+                        <div>
+                            <strong>Research & Projects</strong>
+                            <div class="muted">CFD simulations, thermal system design</div>
+                            <div style="margin-top:8px;color:#374151;font-size:14px">Applied numerical methods and
+                                experiment design for thermal engineering problems; supervised student research and
+                                final-year projects.</div>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top:18px">Skills</h3>
+                    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px">
+                        <span
+                            style="padding:8px 10px;border-radius:8px;background:#f1f5f9;font-weight:600;font-size:13px">Thermal
+                            Analysis</span>
+                        <span
+                            style="padding:8px 10px;border-radius:8px;background:#f1f5f9;font-weight:600;font-size:13px">CFD</span>
+                        <span
+                            style="padding:8px 10px;border-radius:8px;background:#f1f5f9;font-weight:600;font-size:13px">MATLAB</span>
+                        <span
+                            style="padding:8px 10px;border-radius:8px;background:#f1f5f9;font-weight:600;font-size:13px">AutoCAD</span>
+                        <span
+                            style="padding:8px 10px;border-radius:8px;background:#f1f5f9;font-weight:600;font-size:13px">Teaching
+                            & Mentorship</span>
+                    </div>
+                </section>
+
+                <aside class="card">
+                    <h3>Education</h3>
+                    <div style="margin-top:12px">
+                        <div style="margin-bottom:12px">
+                            <strong>M.Tech, Thermal Engineering</strong>
+                            <div class="muted">Jamia Millia Islamia — New Delhi</div>
+                            <div class="muted" style="font-size:13px">August 2023 – July 2025</div>
+                        </div>
+
+                        <div>
+                            <strong>B.Tech, Mechanical Engineering</strong>
+                            <div class="muted">Dr. A.P.J. Abdul Kalam Technical University, Uttar Pradesh</div>
+                            <div class="muted" style="font-size:13px">August 2019 – July 2023</div>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top:18px">Contact</h3>
+                    <div class="muted">Email</div>
+                    <div style="margin-bottom:10px;font-weight:600"><a
+                            href="mailto:aliahmad01309@gmail.com">aliahmad01309@gmail.com</a></div>
+                    <div class="muted">on linkedlist</div>
+                    <div style="margin-bottom:10px;font-weight:600"><a
+                            href="https://www.linkedin.com/in/ali-ahmad-4a55531ab">contact on linkedlist</a></div>
+                    <div class="muted">mob.no.</div>
+                    <div style="margin-bottom:10px;font-weight:600">+91 9354058008</div>
+                    <div class="muted">Location</div>
+                    <div style="font-weight:600">Aligarh, India</div>
+
+                    <div style="margin-top:16px">
+                        <a class="btn btn-primary" id="collabBtn" >Hire / Collaborate</a>
+                    </div>
+                </aside>
+            </div>
+
+            <section id="projects" class="card" style="margin-top:22px">
+                <h3>Selected Projects & Teaching Highlights</h3>
+
+                <div class="project">
+                    <h4>Numerical Investigation — Unsteady Compressible Flow </h4>
+                    <p class="muted">CFD study of transient aerodynamic behaviour around airfoils; grid convergence and
+                        shock–boundary layer analysis.</p>
+                </div>
+
+                <div class="project">
+                    <h4>Design & Fabrication — Multipurpose Electric Wheelchair</h4>
+                    <p class="muted">Final-year project supervision covering mechanical design, ergonomics, and
+                        cost-optimization for assistive devices.</p>
+                </div>
+            </section>
+
+            <section id="contact" class="card" style="margin-top:18px">
+                <h3>Get in touch</h3>
+                <p class="muted">Interested in collaboration, guest lectures, or supervision? Send a short message
+                    below.</p>
+                <form style="margin-top:12px;display:flex;flex-direction:column;gap:10px"
+                    onsubmit="return submitForm(event)">
+                    <input id="name" placeholder="Your name" required
+                        style="padding:10px;border-radius:8px;border:1px solid #e6eef8" />
+                    <input id="email" placeholder="Email" required type="email"
+                        style="padding:10px;border-radius:8px;border:1px solid #e6eef8" />
+                    <textarea id="message" placeholder="Message" required rows="4"
+                        style="padding:10px;border-radius:8px;border:1px solid #e6eef8"></textarea>
+                    <div style="display:flex;gap:8px">
+                        <button class="btn btn-primary" type="submit">Send Message</button>
+                        <button class="btn btn-ghost" type="button" id="clearBtn">Clear</button>
+                    </div>
+                </form>
+            </section>
+
+
+            <footer>
+                © <span id="year"></span> Ali Ahmad — Assistant Professor • Designed with a classic modern aesthetic.
+            </footer>
+        </div>
+
+
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+
+            function openMail(subject) {
+                const email = 'aliahmad01309@gmail.com';
+                const body = encodeURIComponent('Hi Ali Ahmad,\n\nI would like to discuss a project / job opportunity.\n\nRegards,\n');
+                window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${body}`;
+            }
+            
+            document.getElementById('collabBtn').addEventListener('click', () => openMail('Collaboration Opportunity'));
+
+
+            function submitForm(e) {
+                e.preventDefault();
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+                if (!name || !email || !message) { alert('Please fill all fields'); return false }
+                const subject = encodeURIComponent('Portfolio Contact from ' + name);
+                const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+                window.location.href = `mailto:aliahmad01309@gmail.com?subject=${subject}&body=${body}`;
+                return false;
+            }
+
+
+            document.getElementById('clearBtn').addEventListener('click', () => {
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+            });
+
+
+            document.addEventListener('keydown', (e) => { if (e.key.toLowerCase() === 'r' && (e.altKey || e.ctrlKey)) { downloadResume(); } });
+
+
+            (function setBackground() {
+                const img = new Image();
+                img.src = 'assets/profile-bg.jpg';
+                img.onload = () => {
+                    document.body.style.background = `linear-gradient(180deg, rgba(7,16,35,0.9), rgba(8,18,42,0.9)), url('assets/profile-bg.jpg') center/cover fixed`;
+                }
+            })();
+        </script>
+    </body>
+
+</html>
